@@ -134,4 +134,4 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 LOGIN_URL = 'login'
-OPENAI_API_KEY = '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'
+OPENAI_API_KEY = 'OPENAI-API'
