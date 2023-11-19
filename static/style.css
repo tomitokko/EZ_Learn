@@ -1,0 +1,28 @@
+/* Apply background color to the entire webpage */
+body {
+    background-color: #FDDFB2;
+    margin: 0; /* Remove default margin */
+}
+
+/* Style for the navbar */
+.navbar {
+    background-color: #B2D0FD;
+    padding: 10px;
+}
+
+/* Style for buttons */
+button, .btn {
+    background-color: #B2D0FD;
+    color: #fff; /* Set text color to white for better contrast */
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Add hover effect for buttons */
+button:hover, .btn:hover {
+    background-color: #86AEEF;
+}
+
+/* Additional styling for other elements as needed */

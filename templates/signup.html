@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EZLearn - Sign Up</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/opendyslexic');
+
+        body, html {
+          font-family: 'OpenDyslexic', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+    <nav class="bg-gray-100 p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-gray-800">EZLearn</a>
+            <div class="space-x-4">
+                <a href="#" class="text-gray-600 hover:text-gray-800">home</a>
+                <a href="#" class="text-gray-600 hover:text-gray-800">resources</a>
+                <a href="#" class="text-gray-600 hover:text-gray-800">store</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto mt-10 p-8 bg-gray-50 rounded-lg max-w-md shadow-lg">
+        <h2 class="text-3xl text-center mb-6 text-gray-800">SIGN UP</h2>
+
+
+        <style>
+            h5{
+                color: red;
+            }
+        </style>
+        
+        {% for message in messages %}
+        <h5>{{message}}</h5>
+        {% endfor %}
+            
+        <form action="" method="POST" id="signupForm">
+
+            {% csrf_token %}
+            <div class="mb-4">
+                <input type="text" name="first_name" placeholder="First Name" class="w-full p-2 bg-white border border-gray-300 rounded text-gray-800" required>
+            </div>
+            <div class="mb-4">
+                <input type="text" name="last_name" placeholder="Last Name" class="w-full p-2 bg-white border border-gray-300 rounded text-gray-800" required>
+            </div>
+            <div class="mb-4">
+                <input type="text" name="username" placeholder="Username" class="w-full p-2 bg-white border border-gray-300 rounded text-gray-800" required>
+            </div>
+            <div class="mb-4">
+                <input type="email" name="email" placeholder="email" class="w-full p-2 bg-white border border-gray-300 rounded text-gray-800" required>
+            </div>
+            <div class="mb-4">
+                <select name="country" class="w-full p-2 bg-white border border-gray-300 rounded text-gray-800">
+                    <option>Country :</option>
+                    {% for code, name in COUNTRY_CHOICES %}
+                        <option value="{{ code }}">{{ name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="mb-4">
+                <select name="language" class="w-full p-2 bg-white border border-gray-300 rounded text-gray-800">
+                    <option>Language :</option>
+                    {% for code, name in LANGUAGE_CHOICES %}
+                        <option value="{{ code }}">{{ name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="mb-4">
+                <input type="password" name="password" placeholder="Password" class="w-full p-2 bg-white border border-gray-300 rounded text-gray-800" required>
+            </div>
+            <div class="mb-6">
+                <input type="password" name="password2" placeholder="Repeat Password" class="w-full p-2 bg-white border border-gray-300 rounded text-gray-800" required>
+            </div>
+            <button type="submit" class="w-full bg-gray-300 p-3 rounded hover:bg-gray-400 text-gray-800">Submit</button>
+        </form>
+
+    </div>
+
+    <script>
+        // JavaScript if needed
+    </script>
+</body>
+</html>

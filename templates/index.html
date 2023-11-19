@@ -1,0 +1,99 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>EZ Learn</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/opendyslexic');
+
+        body, html {
+          font-family: 'OpenDyslexic', sans-serif;
+        }
+    </style>
+    <style>
+        /* Apply background color to the entire webpage */
+body {
+    background-color: #FDDFB2;
+    margin: 0; /* Remove default margin */
+}
+
+/* Style for the navbar */
+.navbar {
+    background-color: #B2D0FD;
+    padding: 10px;
+}
+
+/* Style for buttons */
+button, .btn {
+    background-color: #B2D0FD;
+    color: #fff; /* Set text color to white for better contrast */
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Add hover effect for buttons */
+button:hover, .btn:hover {
+    background-color: #86AEEF;
+}
+
+    </style>
+</head>
+
+
+<body class="">
+    <div class="container mx-auto p-4">
+        <!-- Header -->
+        <div class="navbar">
+        <header class="flex flex-col items-center justify-between p-4 mb-6  shadow-md">
+           
+            <h1 class="text-2xl font-bold mb-4">EZ Learn</h1>
+            <div class="w-full max-w-md">
+                <input type="search" placeholder="Search" class="w-full p-2">
+            </div>
+        </header>
+
+    </div>
+
+        {% if user.is_authenticated %}
+        <p align="center">
+            <b>
+                Welcome, {{user.username}}
+            </b>
+        </p><br>
+        {% endif %}
+
+        <!-- Navigation -->
+        <nav class="mb-6 ">
+            <ul class="flex justify-center space-x-4 navbar p-4 shadow-md">
+                <li><a href="video-resources" class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Videos</a></li>
+                <li><a href="video-resources" class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">PDFs</a></li>
+                <li><a href="logout" class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Logout</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="flex flex-wrap -mx-2">
+            <section class="w-full md:w-1/2 p-2 ">
+                <div class="navbar p-6 shadow-md">
+                    <h2 class="text-xl font-semibold mb-4">Videos</h2>
+                    <!-- Placeholder for videos -->
+                    <div class="h-64 bg-gray-200"></div>
+                </div>
+            </section>
+            <section class="w-full md:w-1/2 p-2">
+                <div class="navbar p-6 shadow-md">
+                    <h2 class="text-xl font-semibold mb-4">Books</h2>
+                    <!-- Placeholder for books -->
+                    <div class="h-64 bg-gray-200"></div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

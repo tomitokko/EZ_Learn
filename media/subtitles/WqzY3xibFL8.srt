@@ -1,0 +1,461 @@
+1
+00:00:00,656 --> 00:00:02,502
+- [Instructor] Lo que estamos
+va a hacer en este vídeo
+
+2
+00:00:02,501 --> 00:00:03,919
+es presentarnos
+
+3
+00:00:03,919 --> 00:00:05,669
+a la regla del cociente.
+
+4
+00:00:06,535 --> 00:00:08,853
+Y no vamos a
+pruébalo en este vídeo.
+
+5
+00:00:08,853 --> 00:00:10,836
+En un futuro vídeo podremos probar
+mediante la regla del producto
+
+6
+00:00:10,836 --> 00:00:13,580
+y veremos que tiene
+similitudes con la regla del producto.
+
+7
+00:00:13,580 --> 00:00:15,680
+Pero aquí, vamos a aprender acerca de lo que es
+
+8
+00:00:15,680 --> 00:00:19,032
+y cómo y dónde aplicarlo realmente.
+
+9
+00:00:19,032 --> 00:00:20,638
+Así, por ejemplo
+
+10
+00:00:20,638 --> 00:00:22,803
+si tengo alguna función F de X
+
+11
+00:00:22,803 --> 00:00:25,019
+y puede expresarse como el cociente
+
+12
+00:00:25,018 --> 00:00:26,125
+de dos expresiones.
+
+13
+00:00:26,125 --> 00:00:27,324
+Digamos que
+
+14
+00:00:27,324 --> 00:00:28,157
+U de X
+
+15
+00:00:29,074 --> 00:00:30,074
+sobre V de X.
+
+16
+00:00:32,195 --> 00:00:34,232
+Entonces la regla del cociente nos dice
+
+17
+00:00:34,232 --> 00:00:36,373
+que F primo de X
+
+18
+00:00:36,374 --> 00:00:38,100
+será igual a
+
+19
+00:00:38,100 --> 00:00:39,753
+y esto va a parecer
+un poco complicado
+
+20
+00:00:39,753 --> 00:00:41,496
+pero una vez que lo apliquemos, es de esperar que
+
+21
+00:00:41,496 --> 00:00:43,320
+se sienta un poco más cómodo con él.
+
+22
+00:00:43,320 --> 00:00:45,040
+Va a ser igual a la derivada
+
+23
+00:00:45,040 --> 00:00:46,634
+de la función numerador.
+
+24
+00:00:46,634 --> 00:00:48,403
+U primo de X.
+
+25
+00:00:48,404 --> 00:00:51,051
+Veces la función denominador.
+
+26
+00:00:51,051 --> 00:00:52,292
+V de X.
+
+27
+00:00:52,292 --> 00:00:53,125
+Menos
+
+28
+00:00:54,436 --> 00:00:56,481
+la función numerador.
+
+29
+00:00:56,481 --> 00:00:57,314
+U de X.
+
+30
+00:00:58,874 --> 00:01:00,654
+Hazlo en ese color azul.
+
+31
+00:01:00,654 --> 00:01:01,487
+U de X.
+
+32
+00:01:02,534 --> 00:01:04,869
+Veces la derivada de
+la función denominador
+
+33
+00:01:04,870 --> 00:01:07,168
+veces V primo de X.
+
+34
+00:01:07,168 --> 00:01:09,913
+Y esto ya parece muy
+similar a la regla del producto.
+
+35
+00:01:09,912 --> 00:01:11,997
+Si esto fuera U de X por V de X
+
+36
+00:01:11,998 --> 00:01:14,040
+entonces esto es lo que haríamos
+obtendríamos si tomáramos la derivada
+
+37
+00:01:14,040 --> 00:01:15,258
+esto era un signo positivo.
+
+38
+00:01:15,257 --> 00:01:16,808
+Pero esto es aquí, un signo menos.
+
+39
+00:01:16,808 --> 00:01:17,899
+Pero aún no hemos terminado.
+
+40
+00:01:17,900 --> 00:01:19,817
+A continuación, dividiríamos por
+
+41
+00:01:21,188 --> 00:01:23,722
+la función denominador al cuadrado.
+
+42
+00:01:23,722 --> 00:01:24,555
+V de X
+
+43
+00:01:26,646 --> 00:01:27,879
+al cuadrado.
+
+44
+00:01:27,879 --> 00:01:31,509
+Apliquemos esta idea.
+
+45
+00:01:31,510 --> 00:01:34,659
+Digamos que tenemos F de X
+
+46
+00:01:34,659 --> 00:01:36,393
+es igual a
+
+47
+00:01:36,393 --> 00:01:37,646
+X al cuadrado
+
+48
+00:01:37,646 --> 00:01:39,063
+sobre el coseno de X.
+
+49
+00:01:40,739 --> 00:01:42,371
+Bueno, lo que podría ser nuestra U de X
+
+50
+00:01:42,370 --> 00:01:43,774
+y ¿cuál podría ser nuestra V de X?
+
+51
+00:01:43,774 --> 00:01:44,902
+Bueno, nuestra U de X
+
+52
+00:01:44,902 --> 00:01:46,417
+podría ser nuestra X al cuadrado.
+
+53
+00:01:46,417 --> 00:01:47,834
+Es decir, U de X
+
+54
+00:01:48,989 --> 00:01:52,406
+y U primo de X sería igual a dos X.
+
+55
+00:01:53,415 --> 00:01:56,243
+Y entonces este podría ser nuestro V de X.
+
+56
+00:01:56,242 --> 00:01:57,742
+Así que esto es V de X.
+
+57
+00:01:58,953 --> 00:02:00,960
+Y V primo de X.
+
+58
+00:02:00,960 --> 00:02:03,117
+La derivada del coseno
+de X con respecto a X
+
+59
+00:02:03,117 --> 00:02:06,171
+es igual al seno negativo de X.
+
+60
+00:02:06,171 --> 00:02:07,844
+Y luego aplicamos esto.
+
+61
+00:02:07,843 --> 00:02:09,153
+Así que basado en eso
+
+62
+00:02:09,153 --> 00:02:10,153
+F primo de X
+
+63
+00:02:11,336 --> 00:02:12,725
+será igual a
+
+64
+00:02:12,725 --> 00:02:15,156
+la derivada de la función numerador
+
+65
+00:02:15,156 --> 00:02:18,353
+son dos X, justo encima
+aquí, es que allí.
+
+66
+00:02:18,353 --> 00:02:19,639
+Así que van a ser dos X
+
+67
+00:02:19,639 --> 00:02:21,591
+veces la función denominador.
+
+68
+00:02:21,591 --> 00:02:23,972
+V de X es sólo coseno de X
+
+69
+00:02:23,972 --> 00:02:25,472
+veces el coseno de X.
+
+70
+00:02:26,473 --> 00:02:27,306
+Menos
+
+71
+00:02:28,281 --> 00:02:29,676
+la función numerador
+
+72
+00:02:29,675 --> 00:02:32,013
+que es sólo X al cuadrado.
+
+73
+00:02:32,014 --> 00:02:33,605
+X al cuadrado.
+
+74
+00:02:33,604 --> 00:02:36,518
+Veces la derivada de
+la función denominador.
+
+75
+00:02:36,518 --> 00:02:37,935
+La derivada del coseno de X
+
+76
+00:02:37,935 --> 00:02:39,561
+es seno negativo X.
+
+77
+00:02:39,561 --> 00:02:40,918
+Por lo tanto, negativo
+
+78
+00:02:40,918 --> 00:02:41,751
+seno de X.
+
+79
+00:02:43,377 --> 00:02:45,240
+Todo eso sobre
+
+80
+00:02:45,240 --> 00:02:46,573
+todo eso sobre
+
+81
+00:02:47,508 --> 00:02:49,902
+la función denominador al cuadrado.
+
+82
+00:02:49,901 --> 00:02:52,256
+Así que es coseno de X
+
+83
+00:02:52,256 --> 00:02:54,069
+y voy a cuadrarlo.
+
+84
+00:02:54,069 --> 00:02:55,962
+Podría escribirlo, por supuesto, así.
+
+85
+00:02:55,962 --> 00:02:57,319
+En realidad, déjame escribirlo así
+
+86
+00:02:57,319 --> 00:02:58,677
+sólo para dejarlo un poco más claro.
+
+87
+00:02:58,677 --> 00:03:01,361
+Y en este punto, nosotros
+sólo hay que simplificar.
+
+88
+00:03:01,361 --> 00:03:04,133
+Esto será igual a
+
+89
+00:03:04,133 --> 00:03:05,784
+vamos a ver, vamos a conseguir
+
+90
+00:03:05,784 --> 00:03:07,784
+dos X veces el coseno de X.
+
+91
+00:03:08,889 --> 00:03:10,376
+Dos X
+
+92
+00:03:10,377 --> 00:03:11,377
+coseno de X.
+
+93
+00:03:12,334 --> 00:03:15,328
+Negativo multiplicado por negativo es positivo.
+
+94
+00:03:15,328 --> 00:03:16,578
+Además, X al cuadrado
+
+95
+00:03:18,084 --> 00:03:19,639
+X al cuadrado
+
+96
+00:03:19,639 --> 00:03:20,972
+veces el seno de X.
+
+97
+00:03:21,913 --> 00:03:23,296
+Seno
+
+98
+00:03:23,296 --> 00:03:24,304
+de X.
+
+99
+00:03:24,304 --> 00:03:25,637
+Todo eso sobre
+
+100
+00:03:27,070 --> 00:03:29,310
+coseno de X al cuadrado.
+
+101
+00:03:29,310 --> 00:03:31,280
+Que yo también podría escribir así.
+
+102
+00:03:31,280 --> 00:03:32,413
+Y hemos terminado.
+
+103
+00:03:32,413 --> 00:03:33,825
+De hecho, podrías intentar simplificarlo,
+
+104
+00:03:33,825 --> 00:03:36,653
+no hay una manera obvia
+para simplificarlo más.
+
+105
+00:03:36,653 --> 00:03:38,257
+Ahora lo que verá en el futuro
+
+106
+00:03:38,257 --> 00:03:39,662
+es posible que ya conozca algo llamado
+
+107
+00:03:39,662 --> 00:03:42,000
+la regla de la cadena, o podría
+aprenderlo en el futuro.
+
+108
+00:03:42,000 --> 00:03:43,748
+Pero también se podría hacer la regla del cociente
+
+109
+00:03:43,748 --> 00:03:45,528
+utilizando el producto y la regla de la cadena
+
+110
+00:03:45,528 --> 00:03:47,167
+que puedas aprender en el futuro.
+
+111
+00:03:47,167 --> 00:03:48,557
+Pero si aún no conoces la regla de la cadena,
+
+112
+00:03:48,557 --> 00:03:50,474
+esto es bastante útil.

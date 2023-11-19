@@ -1,0 +1,754 @@
+1
+00:00:00,000 --> 00:00:02,623
+- Vamos
+hacer en este vídeo es revisar
+
+2
+00:00:02,623 --> 00:00:05,339
+la noción de funciones compuestas
+
+3
+00:00:05,339 --> 00:00:07,940
+y luego construir algunas habilidades reconociendo
+
+4
+00:00:07,940 --> 00:00:10,838
+cómo se pueden componer realmente las funciones.
+
+5
+00:00:10,837 --> 00:00:13,603
+Si nunca ha oído hablar de
+el término funciones compuestas
+
+6
+00:00:13,603 --> 00:00:15,574
+o si los primeros minutos de este video
+
+7
+00:00:15,574 --> 00:00:16,865
+te resulten desconocidos,
+
+8
+00:00:16,865 --> 00:00:19,196
+Le animo a
+ver los vídeos de álgebra
+
+9
+00:00:19,196 --> 00:00:21,619
+sobre funciones compuestas en Khan Academy.
+
+10
+00:00:21,620 --> 00:00:24,096
+El objetivo de ésta es
+ser realmente un poco
+
+11
+00:00:24,096 --> 00:00:26,551
+un poco de práctica antes de
+entramos en algunas habilidades
+
+12
+00:00:26,550 --> 00:00:28,046
+que son necesarios en cálculo,
+
+13
+00:00:28,047 --> 00:00:30,086
+y en particular la regla de la cadena.
+
+14
+00:00:30,086 --> 00:00:34,100
+Así que vamos a repasar lo que
+una función compuesta es.
+
+15
+00:00:34,100 --> 00:00:36,182
+Digamos que sí,
+
+16
+00:00:37,115 --> 00:00:40,050
+digamos que tengo f de x,
+
+17
+00:00:40,049 --> 00:00:43,049
+f de x siendo igual a uno más x.
+
+18
+00:00:44,759 --> 00:00:47,509
+Y digamos que tenemos g de x
+
+19
+00:00:48,456 --> 00:00:52,206
+es igual a, digamos que g de x es
+
+20
+00:00:52,206 --> 00:00:54,373
+igual al coseno de x.
+
+21
+00:00:55,555 --> 00:00:58,222
+Entonces, ¿cuál sería f de g de x,
+
+22
+00:00:59,207 --> 00:01:00,207
+f de g de x?
+
+23
+00:01:02,478 --> 00:01:03,951
+Y te animo a que pauses este vídeo
+
+24
+00:01:03,951 --> 00:01:06,549
+e intenta resolverlo por tu cuenta.
+
+25
+00:01:06,549 --> 00:01:08,768
+Una forma de verlo es
+
+26
+00:01:08,768 --> 00:01:11,799
+la entrada en f de x ya no es x,
+
+27
+00:01:11,799 --> 00:01:13,385
+es g de x.
+
+28
+00:01:13,385 --> 00:01:15,406
+Por lo tanto, en todas partes donde veamos una x
+
+29
+00:01:15,406 --> 00:01:16,817
+en la definición de f de x,
+
+30
+00:01:16,816 --> 00:01:18,289
+sustituiríamos por la g de x.
+
+31
+00:01:18,290 --> 00:01:20,500
+Así que esto va a ser igual a,
+
+32
+00:01:20,500 --> 00:01:23,417
+esto va a ser igual a uno más.
+
+33
+00:01:24,807 --> 00:01:26,197
+En lugar de que la entrada sea x,
+
+34
+00:01:26,197 --> 00:01:28,061
+la entrada es g de x, por lo que la salida
+
+35
+00:01:28,061 --> 00:01:29,644
+es uno más g de x.
+
+36
+00:01:31,414 --> 00:01:34,725
+Y g de x, por supuesto, es coseno de x.
+
+37
+00:01:34,725 --> 00:01:36,096
+Así que en lugar de escribir g de x allí,
+
+38
+00:01:36,096 --> 00:01:38,263
+Podría escribir coseno de x.
+
+39
+00:01:40,891 --> 00:01:43,887
+Y una forma de visualizar esto es,
+
+40
+00:01:43,887 --> 00:01:47,031
+Primero pongo mi x en g de x,
+
+41
+00:01:47,031 --> 00:01:50,141
+por lo que x entra en la función g,
+
+42
+00:01:50,141 --> 00:01:51,974
+y emite g de x.
+
+43
+00:01:52,953 --> 00:01:54,935
+Y luego vamos a
+tomar esa salida, g de x,
+
+44
+00:01:54,935 --> 00:01:57,168
+y luego introducirlo en f de x,
+
+45
+00:01:57,168 --> 00:01:59,822
+o introdúzcalo en el
+función f, debería decir.
+
+46
+00:01:59,822 --> 00:02:01,754
+Introducimos en la función f,
+
+47
+00:02:01,754 --> 00:02:05,152
+y luego que va a la salida f de
+
+48
+00:02:05,152 --> 00:02:08,989
+cualquiera que fuera la entrada,
+y la entrada es g de x,
+
+49
+00:02:08,989 --> 00:02:09,822
+g de x.
+
+50
+00:02:10,693 --> 00:02:12,826
+Así que ahora con esa revisión fuera del camino,
+
+51
+00:02:12,826 --> 00:02:14,887
+vamos a ver si podemos ir
+al revés.
+
+52
+00:02:14,887 --> 00:02:16,705
+Veamos si podemos mirar algún tipo
+
+53
+00:02:16,705 --> 00:02:18,012
+de la definición de una función y decir,
+
+54
+00:02:18,012 --> 00:02:21,317
+hey, ¿podemos expresarlo como una composición
+
+55
+00:02:21,317 --> 00:02:23,170
+de otras funciones.
+
+56
+00:02:23,169 --> 00:02:26,309
+Así que vamos a empezar con, digamos
+
+57
+00:02:26,310 --> 00:02:27,977
+que tengo una g de x
+
+58
+00:02:30,274 --> 00:02:32,024
+es igual al coseno de
+
+59
+00:02:33,963 --> 00:02:35,796
+seno de x más uno.
+
+60
+00:02:37,782 --> 00:02:39,866
+Y también quiero declarar,
+
+61
+00:02:39,866 --> 00:02:42,193
+a menudo hay más de una manera
+
+62
+00:02:42,193 --> 00:02:45,011
+componer o construir una función
+
+63
+00:02:45,010 --> 00:02:46,423
+basada en la composición de otras.
+
+64
+00:02:46,423 --> 00:02:48,891
+Pero dicho esto,
+pausa este vídeo y di,
+
+65
+00:02:48,891 --> 00:02:50,443
+hey, ¿puedo expresar g de x
+
+66
+00:02:50,443 --> 00:02:52,522
+como una composición de otras dos funciones,
+
+67
+00:02:52,522 --> 00:02:54,939
+¿digamos una f y una h de x?
+
+68
+00:02:55,967 --> 00:02:58,435
+Así que hay un par de maneras
+que podrías pensar en ello.
+
+69
+00:02:58,436 --> 00:03:00,290
+Podrías decir, bueno, veamos,
+
+70
+00:03:00,289 --> 00:03:03,750
+Tengo este seno de x justo aquí.
+
+71
+00:03:03,750 --> 00:03:06,657
+¿Y si a eso le llamo una f de x?
+
+72
+00:03:06,657 --> 00:03:08,571
+Así que digamos que llamé a eso,
+
+73
+00:03:08,572 --> 00:03:10,368
+Bueno, en realidad déjame
+utilizar una variable diferente
+
+74
+00:03:10,368 --> 00:03:11,498
+para que no nos confundamos.
+
+75
+00:03:11,498 --> 00:03:14,305
+Permítanme llamar a esto u de x,
+
+76
+00:03:14,306 --> 00:03:16,002
+el seno de x justo ahí.
+
+77
+00:03:16,002 --> 00:03:19,498
+Así que esto sería coseno
+de u de x más uno.
+
+78
+00:03:19,497 --> 00:03:21,209
+Y así, si luego dividimos,
+
+79
+00:03:21,209 --> 00:03:25,442
+si a continuación definimos
+otra función como v de x
+
+80
+00:03:25,442 --> 00:03:29,275
+siendo igual al coseno
+de cualquiera que sea su entrada
+
+81
+00:03:30,342 --> 00:03:33,375
+más uno, pues entonces esto
+parece que la composición
+
+82
+00:03:33,375 --> 00:03:35,087
+de v y u de x.
+
+83
+00:03:35,087 --> 00:03:39,000
+En vez de v de x, si hiciéramos v de u de x,
+
+84
+00:03:39,000 --> 00:03:42,543
+entonces esto sería coseno
+de u de x más uno,
+
+85
+00:03:42,543 --> 00:03:43,948
+déjame escribirlo.
+
+86
+00:03:43,948 --> 00:03:46,198
+Así que si escribimos v de u de x,
+
+87
+00:03:48,733 --> 00:03:52,209
+que es seno de x, si hicimos v de u de x,
+
+88
+00:03:52,209 --> 00:03:54,918
+que será igual a
+
+89
+00:03:54,918 --> 00:03:58,430
+coseno de, en lugar de una x más uno,
+
+90
+00:03:58,430 --> 00:04:00,782
+va a ser una u de x más uno.
+
+91
+00:04:00,782 --> 00:04:02,588
+Y u de x, déjame escribir esto aquí,
+
+92
+00:04:02,587 --> 00:04:05,254
+u de x es igual a seno de x.
+
+93
+00:04:06,127 --> 00:04:08,049
+Así es como montamos esto.
+
+94
+00:04:08,050 --> 00:04:11,011
+Así que podemos escribir
+coseno de u de x más uno,
+
+95
+00:04:11,010 --> 00:04:13,927
+o coseno de seno de x más uno,
+
+96
+00:04:15,177 --> 00:04:17,319
+que era exactamente lo que teníamos antes.
+
+97
+00:04:17,319 --> 00:04:19,575
+Y así esta función, g de x,
+
+98
+00:04:19,576 --> 00:04:22,435
+es que decimos que u de x es igual a seno de x,
+
+99
+00:04:22,435 --> 00:04:24,778
+si decimos que u de x es igual a seno de x,
+
+100
+00:04:24,778 --> 00:04:29,366
+y v de x es igual a
+coseno de x más uno,
+
+101
+00:04:29,365 --> 00:04:32,721
+entonces podríamos escribir g
+de x como la composición
+
+102
+00:04:32,721 --> 00:04:35,334
+de estas dos funciones.
+
+103
+00:04:35,334 --> 00:04:38,947
+Ahora incluso puedes convertirlo en un
+composición de tres funciones.
+
+104
+00:04:38,947 --> 00:04:42,153
+Podríamos mantener u de x a
+sea igual al seno de x.
+
+105
+00:04:42,153 --> 00:04:45,153
+Podríamos definir, digamos, una w de x
+
+106
+00:04:46,822 --> 00:04:49,238
+sea igual a x más uno.
+
+107
+00:04:50,298 --> 00:04:52,036
+Y entonces, pensemos en ello.
+
+108
+00:04:52,036 --> 00:04:52,870
+W de x,
+
+109
+00:04:54,553 --> 00:04:57,231
+w de u de x, debería decir,
+
+110
+00:04:57,232 --> 00:04:59,815
+w de u, voy a hacer el mismo color,
+
+111
+00:05:02,170 --> 00:05:05,420
+w de u de x va a ser igual a.
+
+112
+00:05:07,444 --> 00:05:10,153
+Ahora mi entrada ya no es x, es u de x,
+
+113
+00:05:10,153 --> 00:05:12,990
+así que será una u de x más uno,
+
+114
+00:05:12,990 --> 00:05:15,730
+o simplemente seno de x más uno.
+
+115
+00:05:15,730 --> 00:05:18,901
+Así que es el seno de x más uno.
+
+116
+00:05:18,901 --> 00:05:21,349
+Y luego, si definimos una tercera función,
+
+117
+00:05:21,350 --> 00:05:24,670
+digamos, veamos, lo llamaré,
+
+118
+00:05:24,670 --> 00:05:27,420
+llamémoslo h; estamos
+quedarse sin variables,
+
+119
+00:05:27,420 --> 00:05:28,875
+aunque quedan muchas cartas.
+
+120
+00:05:28,875 --> 00:05:31,088
+Así que si digo que h de x es
+igual al coseno
+
+121
+00:05:31,088 --> 00:05:34,353
+de lo que sea que introduzca, así que es
+igual al coseno de x,
+
+122
+00:05:34,353 --> 00:05:37,300
+entonces h de w de u de x
+
+123
+00:05:37,300 --> 00:05:38,759
+será g de x.
+
+124
+00:05:38,759 --> 00:05:39,890
+Déjame escribirlo.
+
+125
+00:05:39,891 --> 00:05:41,307
+H de w de u de x,
+
+126
+00:05:47,334 --> 00:05:50,001
+u de x, va a ser igual a,
+
+127
+00:05:51,410 --> 00:05:53,887
+recuerda, h de x toma el coseno
+
+128
+00:05:53,887 --> 00:05:55,372
+de cualquiera que sea su entrada,
+
+129
+00:05:55,372 --> 00:05:57,341
+así que va a tomar el coseno.
+
+130
+00:05:57,341 --> 00:06:00,401
+Ahora su entrada es w de u de x.
+
+131
+00:06:00,401 --> 00:06:02,751
+Ya hemos calculado w de u de x
+
+132
+00:06:02,750 --> 00:06:04,588
+va a ser este negocio.
+
+133
+00:06:04,588 --> 00:06:08,088
+Así que será el seno de x más uno,
+
+134
+00:06:10,992 --> 00:06:12,872
+donde la u de x es el seno de x,
+
+135
+00:06:12,872 --> 00:06:14,949
+pero luego lo introducimos en w,
+
+136
+00:06:14,949 --> 00:06:16,985
+así que tenemos el seno de x más uno,
+
+137
+00:06:16,985 --> 00:06:19,822
+y luego lo introducimos en h
+
+138
+00:06:19,822 --> 00:06:21,584
+para obtener el coseno de eso,
+
+139
+00:06:21,584 --> 00:06:23,132
+que es nuestra expresión original,
+
+140
+00:06:23,132 --> 00:06:25,215
+que es igual a g de x.
+
+141
+00:06:27,779 --> 00:06:30,443
+Así que de lo que se trata aquí es de apreciar
+
+142
+00:06:30,444 --> 00:06:33,259
+cómo reconocer
+composiciones de funciones.
+
+143
+00:06:33,259 --> 00:06:35,685
+Ahora quiero hacer hincapié, no siempre es
+
+144
+00:06:35,685 --> 00:06:37,687
+va a ser una composición de una función.
+
+145
+00:06:37,687 --> 00:06:41,130
+Por ejemplo, si tengo alguna función
+
+146
+00:06:41,130 --> 00:06:42,796
+déjame aclarar esto,
+
+147
+00:06:42,797 --> 00:06:45,629
+si tuviera alguna función f de x
+
+148
+00:06:45,629 --> 00:06:49,212
+es igual a coseno de x por seno de x,
+
+149
+00:06:52,444 --> 00:06:53,989
+sería difícil expresarlo como
+
+150
+00:06:53,988 --> 00:06:56,268
+una composición de funciones,
+
+151
+00:06:56,269 --> 00:06:59,274
+pero puedo representarlo como
+el producto de funciones.
+
+152
+00:06:59,274 --> 00:07:01,879
+Por ejemplo, podría decir coseno de x,
+
+153
+00:07:01,879 --> 00:07:04,461
+Podría decir u de x es
+igual al coseno de x.
+
+154
+00:07:04,461 --> 00:07:07,870
+Y podría decir v de x,
+es de otro color,
+
+155
+00:07:07,870 --> 00:07:09,370
+Podría decir v de x
+
+156
+00:07:11,009 --> 00:07:12,657
+es igual al seno de x.
+
+157
+00:07:12,656 --> 00:07:15,026
+Y así aquí, f de x
+no sería la composición
+
+158
+00:07:15,026 --> 00:07:17,562
+de u y v, sería el producto.
+
+159
+00:07:17,562 --> 00:07:19,896
+F de x es igual a u de x
+
+160
+00:07:22,012 --> 00:07:23,096
+veces v de x.
+
+161
+00:07:24,956 --> 00:07:26,696
+Si fuéramos a tomar la composición,
+
+162
+00:07:26,696 --> 00:07:29,196
+si dijéramos u de v de x,
+
+163
+00:07:30,552 --> 00:07:32,129
+pausa el vídeo, piensa qué es eso,
+
+164
+00:07:32,129 --> 00:07:33,944
+y eso es un poco de revisión.
+
+165
+00:07:33,944 --> 00:07:37,194
+Bueno esto va a ser, tomo u de x
+
+166
+00:07:38,029 --> 00:07:41,057
+toma el coseno de lo que se introduce,
+
+167
+00:07:41,057 --> 00:07:45,331
+y ahora la entrada es v de
+x, que sería el seno de x;
+
+168
+00:07:45,331 --> 00:07:46,164
+seno de x.
+
+169
+00:07:47,283 --> 00:07:49,096
+Y entonces si hicieras v de u de x,
+
+170
+00:07:49,096 --> 00:07:50,205
+pues sería al revés.
+
+171
+00:07:50,206 --> 00:07:52,307
+Sería seno de coseno de x.
+
+172
+00:07:52,307 --> 00:07:54,158
+Pero de todos modos, esto es una vez más, sólo para
+
+173
+00:07:54,158 --> 00:07:55,800
+ayudarnos a reconocer, hey, tengo,
+
+174
+00:07:55,800 --> 00:07:58,094
+cuando miro una expresión
+o una definición de función,
+
+175
+00:07:58,095 --> 00:08:00,156
+productos de funciones,
+
+176
+00:08:00,156 --> 00:08:02,441
+¿estoy viendo composiciones de funciones?
+
+177
+00:08:02,440 --> 00:08:04,700
+A veces buscas
+en productos de composiciones
+
+178
+00:08:04,701 --> 00:08:06,103
+o cocientes de composiciones,
+
+179
+00:08:06,103 --> 00:08:08,021
+todo tipo de combinaciones diferentes de cómo
+
+180
+00:08:08,021 --> 00:08:11,864
+puedes juntar funciones
+para crear nuevas funciones.

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>EZLearn - Video Page</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/opendyslexic');
+
+        body, html {
+          font-family: 'OpenDyslexic', sans-serif;
+        }
+        /* Additional styles if needed */
+        .video-thumbnail {
+            background-image: url('https://via.placeholder.com/640x360');
+            background-size: cover;
+            background-position: center;
+        }
+        .chat-container {
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        .chat-message {
+            display: flex;
+            align-items: center;
+            padding: 0.75rem 1rem;
+            margin-bottom: 0.5rem;
+            background-color: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .chat-message.ai {
+            justify-content: flex-start;
+        }
+        .chat-message.me {
+            justify-content: flex-end;
+        }
+        .chat-message span {
+            max-width: 80%;
+        }
+        .chat-avatar {
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 9999px;
+            margin-right: 0.75rem;
+        }
+        .chat-avatar.ai {
+            margin-right: 0;
+            margin-left: 0.75rem;
+        }
+        .chat-input {
+            border-radius: 9999px;
+            padding: 0.5rem 1rem;
+            border: 2px solid #cbd5e1;
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+    <nav class="bg-gray-100 p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-gray-800">EZLearn</a>
+            <div class="space-x-4">
+                <a href="#" class="text-gray-600 hover:text-gray-800">home</a>
+                <a href="#" class="text-gray-600 hover:text-gray-800">resources</a>
+                <a href="#" class="text-gray-600 hover:text-gray-800">store</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto mt-10 p-8 bg-gray-100 rounded-lg shadow-lg">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="md:col-span-2">
+                <h2 class="text-2xl mb-4 text-gray-800">{{title}}</h2>
+
+
+
+                <!-- <div class="video-thumbnail rounded-lg h-64 mb-4"></div> -->
+                <div id="youtube-player">
+                <iframe width="750" height="400" src="https://www.youtube.com/embed/{{link_id}}" title="I Spent 7 Days Buried Alive" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                
+                <audio id="myAudio" style="display: none;" controls>
+                    <source src="/media/{{link_id}}.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+
+                <p class="mb-4 text-gray-600">Description: {{description}}</p>
+                <!-- <p class="mb-4 text-gray-600">Description: {{video_transcript}}</p> -->
+                <div class="flex justify-between items-center mb-4">
+                    <div class="flex space-x-2">
+                        <form action="convert-to-srt" method="POST">
+                            {% csrf_token %}
+                            <select name="language" class="bg-white border border-gray-300 rounded p-2 text-gray-800">
+                                <option>Select Language</option>
+                                <option value="BG">Bulgarian</option>
+                                <option value="CS">Czech</option>
+                                <option value="DA">Danish</option>
+                                <option value="DE">German</option>
+                                <option value="EL">Greek</option>
+                                <option value="ES">Spanish</option>
+                                <option value="ET">Estonian</option>
+                                <option value="FI">Finnish</option>
+                                <option value="FR">French</option>
+                                <option value="HU">Hungarian</option>
+                                <option value="ID">Indonesian</option>
+                                <option value="IT">Italian</option>
+                                <option value="JA">Japanese</option>
+                                <option value="KO">Korean</option>
+                                <option value="LT">Lithuanian</option>
+                                <option value="LV">Latvian</option>
+                                <option value="NB">Norwegian (Bokmål)</option>
+                                <option value="NL">Dutch</option>
+                                <option value="PL">Polish</option>
+                                <option value="PT">Portuguese</option>
+                                <option value="PT-BR">Portuguese (Brazilian)</option>
+                                <option value="RO">Romanian</option>
+                                <option value="RU">Russian</option>
+                                <option value="SK">Slovak</option>
+                                <option value="SL">Slovenian</option>
+                                <option value="SV">Swedish</option>
+                                <option value="TR">Turkish</option>
+                                <option value="UK">Ukrainian</option>
+                                <option value="ZH">Chinese (simplified)</option>
+                            </select>
+                            <input type="hidden" name="youtube_id" value="{{link_id}}"/>
+                            <input type="hidden" name="youtube_link" value="{{link}}"/>
+                            <input type="hidden" name="title" value="{{title}}"/>
+                            <input type="hidden" name="description" value="{{description}}"/>
+                            <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                                Dub
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="md:col-span-1">
+                <h3 class="text-xl mb-4 text-gray-800">AI TUTOR</h3>
+                <div class="chat-container space-y-4 p-4 bg-white rounded-lg">
+                    <!-- Chat messages will go here -->
+                    <!-- <div class="chat-message me">
+                        <img src="https://via.placeholder.com/40" alt="User Avatar" class="chat-avatar">
+                        <span class="text-gray-800">Hello, how can I help you today?</span>
+                    </div>
+                    <div class="chat-message ai">
+                        <span class="text-gray-800">Can you explain the concept of relativity?</span>
+                        <img src="https://via.placeholder.com/40" alt="AI Avatar" class="chat-avatar ai">
+                    </div>
+                    <div class="chat-message me">
+                        <img src="https://via.placeholder.com/40" alt="User Avatar" class="chat-avatar">
+                        <span class="text-gray-800">Sure! In simple terms, relativity is...</span>
+                    </div> -->
+                    <!-- More chat messages -->
+                </div>
+                <form action="" method="POST">
+                    {% csrf_token %}
+                <div class="mt-4">
+                    <input type="text" id="chat-input" placeholder="Reply here..." class="chat-input">
+                    <button type="button" id="send-btn" class="send-button">Send</button>
+
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('#send-btn').click(function() {
+                var userInput = $('#chat-input').val();
+                if(userInput) {
+                    // Append user message to chat
+                    $('.chat-container').append('<div class="chat-message me"><img src="https://via.placeholder.com/40" alt="User Avatar" class="chat-avatar"><span class="text-gray-800">' + userInput + '</span></div>');
+    
+                    // AJAX call to Django backend
+                    $.ajax({
+                        url: '/chatbot-response/', // Update with your Django URL
+                        type: 'post',
+                        data: { 'message': userInput, 'transcript': '{{video_transcript}}' },
+                        headers: {
+                            'X-CSRFToken': getCookie('csrftoken') // CSRF token for Django
+                        },
+                        success: function(response) {
+                            // Append AI response to chat
+                            $('.chat-container').append('<div class="chat-message ai"><span class="text-gray-800">' + response.message + '</span><img src="https://via.placeholder.com/40" alt="AI Avatar" class="chat-avatar ai"></div>');
+                        }
+                    });
+    
+                    // Clear the input field
+                    $('#chat-input').val('');
+                }
+            });
+        });
+    
+        // Function to get CSRF token
+        function getCookie(name) {
+            let cookieValue = null;
+            if (document.cookie && document.cookie !== '') {
+                const cookies = document.cookie.split(';');
+                for (let i = 0; i < cookies.length; i++) {
+                    const cookie = jQuery.trim(cookies[i]);
+                    if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+
+        // Load the IFrame Player API code asynchronously.
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        // Create the YouTube player.
+        var player;
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('youtube-player', {
+            height: '400',
+            width: '750',
+            videoId: '{{ link_id }}', // Replace with your link_id
+            playerVars: { 'autoplay': 0, 'controls': 1, 'mute': 1 },
+            events: {
+                'onStateChange': onPlayerStateChange
+            }
+            });
+        }
+
+        function onPlayerStateChange(event) {
+            var audio = document.getElementById("myAudio");
+            if (event.data == YT.PlayerState.PLAYING) {
+            audio.play();
+            } else if (event.data == YT.PlayerState.PAUSED) {
+            audio.pause();
+            }
+        }
+
+    </script>
+    
+</body>
+</html>

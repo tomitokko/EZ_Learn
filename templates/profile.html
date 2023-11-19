@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Profile Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/opendyslexic');
+
+        body, html {
+          font-family: 'OpenDyslexic', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    
+    <!-- Navigation Dashboard (Generic) -->
+    <nav class="bg-gray-100 p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-gray-800">EZLearn</a>
+            <div class="space-x-4">
+                <a href="#" class="text-gray-600 hover:text-gray-800">home</a>
+                <a href="#" class="text-gray-600 hover:text-gray-800">resources</a>
+                <a href="#" class="text-gray-600 hover:text-gray-800">store</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto p-4">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <div class="flex items-center space-x-4">
+                <!-- Profile Picture -->
+                <div class="flex-shrink-0">
+                    <img class="h-16 w-16 rounded-full" src="https://via.placeholder.com/150" alt="Profile image">
+                </div>
+                <div class="flex-1">
+                    <!-- Username -->
+                    <div class="mb-2">
+                        <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                        <input type="text" id="name" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Name">
+                    </div>
+                    <!-- Points -->
+                    <div class="mb-2">
+                        <label for="points" class="block text-sm font-medium text-gray-700">Points</label>
+                        <input type="text" id="points" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Points">
+                    </div>
+                    <!-- Dyslexia Friendly Toggle -->
+                    <div class="flex items-center">
+                        <input id="dyslexia-friendly" type="checkbox" class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded">
+                        <label for="dyslexia-friendly" class="ml-2 block text-sm text-gray-900 dyslexia-friendly">Dyslexia friendly</label>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-6">
+                <h2 class="text-xl font-semibold text-gray-900">Most recent</h2>
+                <div class="grid grid-cols-2 gap-4 mt-4">
+                    <div class="aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden">
+                        <img class="object-cover object-center" src="https://via.placeholder.com/150" alt="Recent item">
+                    </div>
+                    <div class="aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden">
+                        <img class="object-cover object-center" src="https://via.placeholder.com/150" alt="Recent item">
+                    </div>
+                    <div class="aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden">
+                        <img class="object-cover object-center" src="https://via.placeholder.com/150" alt="Recent item">
+                    </div>
+                    <div class="aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden">
+                        <img class="object-cover object-center" src="https://via.placeholder.com/150" alt="Recent item">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
