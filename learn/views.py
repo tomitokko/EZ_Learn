@@ -84,7 +84,7 @@ def video_search(search_term):
     querystring = {"keywords":search_term,"lang":"en","type":"video","sort":"popularity","model":"strict","max":"10","page":"0"}
 
     headers = {
-        "X-RapidAPI-Key": "21d322268amsh4b1c363def79a1fp14c18djsn859b6f259e07",
+        "X-RapidAPI-Key": "RAPID-API-KEY",
         "X-RapidAPI-Host": "learning-objects-v2.p.rapidapi.com"
     }
 
@@ -99,7 +99,7 @@ def pdf_search(search_term):
     querystring = {"s":"poor dad rich dad"}
 
     headers = {
-    	"X-RapidAPI-Key": "21d322268amsh4b1c363def79a1fp14c18djsn859b6f259e07",
+    	"X-RapidAPI-Key": "RAPID-API-KEY",
     	"X-RapidAPI-Host": "getbooksinfo.p.rapidapi.com"
     }
 
@@ -156,7 +156,7 @@ def download_audio(link):
 #     audio_file_name = os.path.basename(audio_file)
 #     full_audio_link = 'http://127.0.0.1:8000/media/'+audio_file_name
 #     print(full_audio_link)
-#     aai.settings.api_key = "7b9d45faa00b4563a2a3683b2cdc66b8"
+#     aai.settings.api_key = ""
 
 #     transcriber = aai.Transcriber()
 #     transcript = transcriber.transcribe(full_audio_link)
@@ -227,7 +227,7 @@ def convert_to_srt(request):
 
     srt_transcript = srt_format.strip()
 
-    translator = deepl.Translator("edb048c1-9c7f-7116-2e27-11b90aa8a602:fx")
+    translator = deepl.Translator("DEEPL-API")
 
     translated_content = []
     for line in srt_transcript.split('\n'):
