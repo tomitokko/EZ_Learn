@@ -2,6 +2,12 @@
 A Platform to help Dyslexic people and Improvished people learn better. <br>
 This is the **winning project** of the **24 hours Imperial College Coding Hackathon 2023**.<br>
 
+Team:<br>
+1. [<img src="https://github.com/tomitokko.png" width="60px;"/><sub>  <a href="https://github.com/tomitokko">Tomi Tokko</a></sub>](https://github.com/tomitokko)
+2. [<img src="https://github.com/tman6290.png" width="60px;"/><sub>  <a href="https://github.com/tman6290">Tofarati Farinu</a></sub>](https://github.com/tman6290)
+3. [<img src="https://github.com/Alwdo.png" width="60px;"/><sub>  <a href="https://github.com/Alwdo">Alwdo</a></sub>](https://github.com/Alwdo)
+
+
 The techstack used are Python(Django), HTML, CSS & Javascript.<br><br>
 
 To run this locally, run these commands:
