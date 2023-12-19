@@ -21,7 +21,15 @@ cd EZ_Learn
 <br>
 Navigate to views.py (learn/views.py) file. On line 87 and 102, replace `RAPID-API-KEY` with your RapidAPI API key. On line 230, replace `DEEPL-API` with your DeepL API Key.
 <br><br>
-Navigate to settings.py (ez_learn/settings.py) file. On line 137, replace `OPENAI-API` with your OpenAI API key.<br><br>
+Navigate to settings.py (ez_learn/settings.py) file. On line 137, replace `OPENAI-API` with your OpenAI API key.
+<br><br>
+Create a virtual environment to install all the python packages used in the project.
+<br><br>
+After creating the virtual environment, activate the virtual environment and install the packages for the project from the requirements.txt file using the command
+
+```html
+python3 pip install -r requirements.txt
+```
 
 Now run this command below and open http://127.0.0.1:8000/ in your browser to view this project
 
