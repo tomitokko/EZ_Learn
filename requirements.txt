@@ -8,7 +8,7 @@ click==8.1.7
 colorama==0.4.6
 deepl==1.16.1
 distro==1.8.0
-Django==4.2.8
+Django==4.1
 gTTS==2.4.0
 h11==0.14.0
 httpcore==1.0.2
