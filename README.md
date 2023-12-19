@@ -27,6 +27,7 @@ Create a virtual environment to install all the python packages used in the proj
 <br><br>
 After creating the virtual environment, activate the virtual environment and install the packages for the project from the requirements.txt file using the command
 
+
 ```html
 python3 pip install -r requirements.txt
 ```
